@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F7F9FC; /* Gris claro */
+    background-image: url('img/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #1E3A5F; 
+
+
+.titulo {
+    color: #1E3A5F; 
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+/* Subtítulo */
+.subtitulo {
+    color: #3BAFDA; /* Turquesa */
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+
+header {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Blanco cálido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+nav {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly; /* Espaciado uniforme entre los elementos */
+    align-items: center;
+    background: #1E3A5F; /* Fondo azul oscuro */
+    padding: 10px; /* Menos margen alrededor */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre cuadros */
+    width: 100%; /* Ocupa todo el ancho */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    text-align: center;
+    margin: 0 5px; /* Separación horizontal entre los cuadros */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F7F9FC; /* Gris claro */
+    font-weight: bold;
+    padding: 10px; /* Más delgado */
+    display: block;
+    background: #3BAFDA; /* Turquesa */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 18px; /* Ajustar tamaño de texto */
+}
+
+nav ul li a:hover {
+    background: #F4A261; /* Naranja suave */
+    color: #FFFFFF; /* Blanco */
+}
+/* Contenedor de imágenes */
+.imagenes {
+    display: flex;
+    justify-content: space-evenly; /* Espaciado uniforme */
+    align-items: center;
+    margin: 20px 0;
+}
+
+.imagenes div {
+    text-align: center;
+    flex: 1; /* Cada imagen ocupa el mismo espacio */
+    margin: 0 10px; /* Espaciado horizontal entre imágenes */
+}
+
+.imagenes img {
+    max-width: 100%; /* Ajustar imagen al tamaño del contenedor */
+    height: auto; /* Mantener proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras suaves */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Más sombra al hacer hover */
+}
+
+.imagenes p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #1E3A5F; /* Azul oscuro */
+    font-weight: bold;
+}
+
+footer {
+    background: linear-gradient(90deg, #1E3A5F, #3BAFDA); /* Azul oscuro a turquesa */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+button {
+    background: #F4A261; /* Naranja suave */
+    color: #FFFFFF; /* Blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #E76F51; /* Naranja más oscuro */
+}
+
+}

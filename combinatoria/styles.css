@@ -1,0 +1,148 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/fondocabeza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(52, 152, 219, 0.8); 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.formulas {
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulas h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formula-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.formula-item {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.formula {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.numerator {
+    border-bottom: 1px solid #000;
+    display: block;
+    padding: 2px 5px;
+}
+
+.denominator {
+    display: block;
+    padding: 2px 5px;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 80%;
+}
+
+footer {
+    background-color: rgba(52, 152, 219, 0.8); 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}

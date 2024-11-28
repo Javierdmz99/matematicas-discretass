@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Generador de árbol binario</title>
+  
+</head>
+<body>
+  <h1>Generador de árbol binario</h1>
+  <div class="input-container">
+    <label for="numbers">Ingresa los números separados por comas:</label><br>
+    <input type="text" id="numbers" placeholder="Ejemplo: 1,2,3,4,5">
+    <button onclick="generateTree()">Generar árbol</button>
+    <button onclick="clearTree()">Eliminar árbol</button>
+  </div>
+  <canvas id="binaryTreeCanvas" width="800" height="600"></canvas>
+  <h2>Recorrido Preorden:</h2>
+  <p id="preorderTraversal">-</p>
+  <h2>Recorrido Inorden:</h2>
+  <p id="inorderTraversal">-</p>
+  <h2>Recorrido Posorden:</h2>
+  <p id="postorderTraversal">-</p>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camino Más Corto - Dijkstra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Camino Más Corto (Dijkstra)</h1>
+    <canvas id="graphCanvas" width="600" height="400"></canvas>
+    <div class="controls">
+        <button id="toggleMode">Modo: Agregar Nodos</button>
+        <label for="startNode">Nodo Inicio:</label>
+        <select id="startNode"></select>
+        <label for="endNode">Nodo Fin:</label>
+        <select id="endNode"></select>
+        <button id="findPath">Ver Camino Más Corto</button>
+    </div>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>

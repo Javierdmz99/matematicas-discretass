@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Combinatoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Combinatoria</h1>
+    </header>
+    <main>
+        <div class="calculator">
+            <label for="calculationType">Tipo de cálculo:</label>
+            <select id="calculationType">
+                <option value="combWithoutRep">Combinaciones sin repetición</option>
+                <option value="combWithRep">Combinaciones con repetición</option>
+                <option value="permWithoutRep">Permutaciones sin repetición</option>
+                <option value="permWithRep">Permutaciones con repetición</option>
+                <option value="varWithoutRep">Variaciones sin repetición</option>
+                <option value="varWithRep">Variaciones con repetición</option>
+            </select>
+
+            <label for="nValue">Valor de n:</label>
+            <input type="number" id="nValue" min="0" required>
+
+            <label for="rValue">Valor de r:</label>
+            <input type="number" id="rValue" min="0" required>
+
+            <button id="calculateButton">Calcular</button>
+
+            <div id="result"></div>
+        </div>
+
+        <div class="formulas">
+            <h2>Fórmulas Combinatorias</h2>
+            <div class="formula-row">
+                <div class="formula-item">
+                    <strong>Combinaciones sin repetición:</strong>
+                    <div class="formula">
+                        <div class="fraction">
+                            <span class="numerator">n!</span>
+                            <span class="denominator">r!(n - r)!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formula-item">
+                    <strong>Combinaciones con repetición:</strong>
+                    <div class="formula">
+                        <div class="fraction">
+                            <span class="numerator">(n + r - 1)!</span>
+                            <span class="denominator">r!(n - 1)!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formula-item">
+                    <strong>Permutaciones sin repetición:</strong>
+                    <div class="formula">
+                        <div class="fraction">
+                            <span class="numerator">n!</span>
+                            <span class="denominator">(n - r)!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formula-row">
+                <div class="formula-item">
+                    <strong>Permutaciones con repetición:</strong>
+                    <div class="formula">n<sup>r</sup></div>
+                </div>
+                <div class="formula-item">
+                    <strong>Variaciones sin repetición:</strong>
+                    <div class="formula">
+                        <div class="fraction">
+                            <span class="numerator">n!</span>
+                            <span class="denominator">(n - r)!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formula-item">
+                    <strong>Variaciones con repetición:</strong>
+                    <div class="formula">n<sup>r</sup></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
